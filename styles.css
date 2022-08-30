@@ -1,0 +1,71 @@
+body {
+    background: #110d43;
+    font-family: Impact;
+}
+
+/* * HEADER STYLES * */
+
+.header {
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 15vh;
+}
+
+.header-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 6px;
+    align-items: center;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.header-button {
+    position: relative;
+    color: aliceblue;
+    text-align: center;
+    height: 5vh;
+    width: 10rem;
+    font-size: 25px;
+    transition: 0.4s;
+}
+
+.header-button p {
+    margin: 10px;
+}
+
+.header-button:hover {
+    border-radius: 10%;
+    background: #000000;
+}
+
+.header-button-bar {
+    position: relative;
+    width: auto;
+    height: 2px;
+
+    transition: 0.4s;
+}
+
+.header-button:hover .header-button-bar {
+    height: 10px;
+}
+
+.purple {
+    background: purple;
+}
+
+.red {
+    background: red;
+}
+
+.green {
+    background: green;
+}
