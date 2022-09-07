@@ -1,0 +1,74 @@
+:root {
+    background: rgb(16, 15, 27);
+
+}
+
+
+.cardholder {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 0.5fr));
+    align-self: center;
+}
+
+
+.card {
+
+    height: 350px;
+    width: 250px;
+
+    position: relative;
+    background: rgb(71, 61, 61);
+    border-radius: 20%;
+
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.75);
+
+    transition: all 0.3s ease;
+}
+
+#card-click {
+    display: none;
+}
+
+
+.card:hover {
+    scale: 110%;
+    cursor: pointer;
+}
+
+#card-click:checked~div {
+    scale: 150%;
+}
+
+.card p {
+    text-align: center;
+    transform: translateY(85%);
+    color: antiquewhite;
+    font-size: 30px;
+    font-family: Impact;
+
+}
+
+.card img {
+    position: absolute;
+    width: auto;
+    height: 75%;
+    transition: all 0.3s ease;
+}
+
+.card:hover img {
+    height: 70%;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
